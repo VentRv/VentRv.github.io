@@ -1,33 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <title>Document</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>嗨</title>
+        <style>     /* 內部CSS */
+            body {
+                  background-attachment: scroll;
+                  background-position: 110px 160px;
+                  /*以上也可寫成background: rgb(250, 245, 230) url(https://stickershop.line-scdn.net/stickershop/v1/sticker/290372334/android/sticker.png) no-repeat scroll 110px 160px */
+                 }
+            #part1 {
+                     box-sizing: border-box;
+                     height: 310px;
+                     width: 430px;
+                     color:black;   /* div class="part1"內的字彙都是黑色的 Ex:第34行 */
+                     margin: 30px auto;
+                     padding: 15px 5px 5px;
+                    } 
+            .touch:hover {background-color:gray;}     
+            .center {text-align:center}
+        </style>
+        
+    </head>
+    <body>
 
-  <div class="app">
-    <h1>備忘錄</h1>
-    <p>記事</p>
-    <input type="text" id="content"/>
-    <p>日期</p>
-    <input type="date" id="date"/>
-    <p>時間</p>
-    <input type="time" id="time"/>
-    <button class="add" id="addedBtn">新增</button>
-    <button class="remove" id="deletedBtn">刪除最後一個</button>
-    <div class="list" id="list">
-      <div class="item">
-        <div>
-          <p>內容：</p>
-          <p>時間：</p>
-        </div>
-      </div>
-    </div>
-  </div> 
-  <script src="./index.js"></script>
-</body>
+        <div id="part1">        <!--div容器以內(包含<p>裡面的字)的字均為黑色-->
+            <p class="center"> 
+                用戶名稱:<input type="text" placeholder="請設置用戶名"/>
+                <br/>
+                <br/>
+                手機號碼:<input type="text" placeholder="可用於登錄和找回密碼"/>
+                <br/>
+                <br/>
+                密碼:<input type="password" placeholder="請設置登錄密碼"/> 
+                <br/>
+                <br/>
+                驗證碼:<input type="text" placeholder="請輸入驗證碼"/>  <input type="submit" value="獲取驗證碼">
+                <br/>
+                <br/>
+                <input type="checkbox" />閱讀並接受《<a href="https://www.youtube.com/embed/oD0UxVwr0Ng?fbclid=IwAR03q4Zf2vseBHr2ZML3pP52Co0KJtgzZryc_68C4q9KovfLMQklw-_AcRM">用戶協議</a>》及《<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">隱私權保障聲明</a>》 
+                <br/>
+                <br/>
+                <button type="button"  value="註冊" id="button" style=width:60px ; height:30px ; 
+                onclick="alert('註冊成功!!')" ><a href="/page.html">註冊</a></button>
+               
+               
+            </p>     
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        
+    </body>
 </html>
